@@ -1,0 +1,23 @@
+ansible -i 3.84.212.147, all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ping
+ansible -i 3.84.212.147, all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m dnf
+ansible -i 3.84.212.147, all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m systemctl
+
+Ansible-Plqaybooks (YAML)
+
+---
+- hosts: all
+  name: Run a sample playbook
+  tasks:
+   - name: Execute a command
+     command: apt-get install ngnix
+
+   - name: Execute a command
+     dnf: apache2
+
+
+
+---
+-name:
+ hosts:
+ tasks:
+ - name
