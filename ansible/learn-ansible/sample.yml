@@ -1,4 +1,4 @@
--name: Print sameple text
+-name: Print sample text
  hosts: localhost
  tasks: 
   - name: Print statement
