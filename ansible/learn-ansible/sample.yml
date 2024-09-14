@@ -1,6 +1,6 @@
 - name: Print sample text
- hosts: localhost
- tasks: 
+  hosts: localhost
+  tasks: 
   - name: Print statement
     ansible.builtin.debug:
      msg: I Like Ansible
