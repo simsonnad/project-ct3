@@ -11,8 +11,8 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_s3_bucket" "sim-bucket" {
-    bucket = "simson-bucket-devops
+resource "aws_s3_bucket" "simbucket" {
+    bucket = "simson-bucket-devops"
 
   tags = {
     Name        = "My bucket"
